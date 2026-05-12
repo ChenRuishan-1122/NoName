@@ -23,6 +23,7 @@
         <div class="nav-links">
           <a href="#books">译作</a>
           <a href="#about">简介</a>
+          <a href="#next-steps">下一步</a>
           <a href="#contact">联系</a>
         </div>
       </nav>
@@ -71,6 +72,33 @@
         </div>
 
         <div class="book-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section next-steps" id="next-steps">
+        <p class="eyebrow">Next Steps</p>
+        <h2>下一步怎么做？</h2>
+        <div class="steps-grid">
+          <article>
+            <span>01</span>
+            <h3>整理真实资料</h3>
+            <p>准备译者姓名、个人简介、联系邮箱，以及每本译作的书名、原作者、出版年份、封面图片和购买链接。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>替换示例内容</h3>
+            <p>在 <code>index.html</code> 替换简介和联系方式，在 <code>script.js</code> 的 <code>books</code> 数组中替换书目信息。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>本地预览检查</h3>
+            <p>运行 <code>python3 -m http.server 8000</code>，打开本地网页检查手机端和桌面端效果。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>上线发布</h3>
+            <p>确认无误后，把这些静态文件部署到 GitHub Pages、Netlify、Vercel 或你自己的服务器。</p>
+          </article>
+        </div>
       </section>
 
       <section class="section contact" id="contact">
