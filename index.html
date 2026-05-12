@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="个人译者作品网页：展示出版译作、封面、简介与购买链接。"
+      content="陈锐珊译者个人网页：展示已出版译作、简介与购买链接。"
     />
-    <title>译者作品集 | 个人网页</title>
+    <title>陈锐珊 | 译者</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Inter:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Serif+SC:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,101 +19,72 @@
   <body>
     <header class="site-header" id="top">
       <nav class="nav" aria-label="主导航">
-        <a class="logo" href="#top" aria-label="返回页面顶部">译者<span>作品集</span></a>
+        <a class="brand" href="#top">陈锐珊</a>
         <div class="nav-links">
-          <a href="#books">译作</a>
-          <a href="#about">简介</a>
-          <a href="#next-steps">下一步</a>
-          <a href="#contact">联系</a>
+          <a href="#about">About</a>
+          <a href="#books">Books</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Translator Portfolio</p>
-          <h1>把世界的故事，翻译成可亲近的中文。</h1>
-          <p class="hero-text">
-            这里展示我的出版译作、封面图片、内容简介和购买入口。你可以将示例资料替换为自己的真实书名、封面和购买链接。
-          </p>
+          <p class="kicker">Translator</p>
+          <h1 id="hero-title">陈锐珊</h1>
+          <p class="tagline">借翻译之便，靠近不同文本里的声音、节奏与光亮。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#books">查看译作</a>
-            <a class="button secondary" href="mailto:translator@example.com">联系合作</a>
+            <a class="text-link" href="#books">View translated books</a>
+            <a class="text-link" href="mailto:susie_chen@yeah.net">susie_chen@yeah.net</a>
           </div>
         </div>
-        <aside class="hero-card" aria-label="译者资料摘要">
+        <figure class="portrait-card">
           <img
-            src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=900&q=80"
-            alt="摊开的书本与阅读空间"
+            src="assets/chen-ruishan-photo.jpg"
+            alt="陈锐珊在夕阳光线里微笑拍照"
+            onerror="this.onerror=null;this.src='assets/chen-ruishan-photo.svg';"
           />
-          <div>
-            <strong>12+</strong>
-            <span>出版译作</span>
-          </div>
-        </aside>
+          <figcaption>Photo provided by Chen Ruishan</figcaption>
+        </figure>
       </section>
     </header>
 
     <main>
-      <section class="section intro" id="about">
-        <p class="eyebrow">About</p>
-        <h2>译者简介</h2>
-        <p>
-          我是一名专注文学、社科与生活方式图书的译者，长期关注跨文化叙事、清晰表达与中文阅读体验。欢迎出版社、编辑与版权机构联系洽谈翻译合作。
-        </p>
+      <section class="section about" id="about">
+        <div class="section-label">About</div>
+        <div>
+          <h2>在翻译中听见文本。</h2>
+          <p>
+            陈锐珊，译者。译作覆盖社会学、科技史、商业、经济、金融、能源与科学写作等领域。她借翻译之便，靠近不同文本里的声音、节奏与光亮，也把那些来自世界各处的知识、经验与感受，带到中文读者面前。
+          </p>
+        </div>
       </section>
 
-      <section class="section" id="books">
-        <div class="section-heading">
+      <section class="section works" id="books">
+        <div class="works-heading">
           <div>
-            <p class="eyebrow">Published Translations</p>
+            <div class="section-label">Books</div>
             <h2>已出版译作</h2>
           </div>
-          <p>点击“购买”可跳转到对应销售页面；示例链接可替换为豆瓣、当当、京东、出版社官网或其他渠道。</p>
+          <p>
+            按出版年份整理。购买链接优先指向可公开访问的图书详情、电子书或书店页面；部分新书链接可能随平台库存变化而调整。
+          </p>
         </div>
-
-        <div class="book-grid" aria-live="polite"></div>
-      </section>
-
-      <section class="section next-steps" id="next-steps">
-        <p class="eyebrow">Next Steps</p>
-        <h2>下一步怎么做？</h2>
-        <div class="steps-grid">
-          <article>
-            <span>01</span>
-            <h3>整理真实资料</h3>
-            <p>准备译者姓名、个人简介、联系邮箱，以及每本译作的书名、原作者、出版年份、封面图片和购买链接。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>替换示例内容</h3>
-            <p>在 <code>index.html</code> 替换简介和联系方式，在 <code>script.js</code> 的 <code>books</code> 数组中替换书目信息。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>本地预览检查</h3>
-            <p>运行 <code>python3 -m http.server 8000</code>，打开本地网页检查手机端和桌面端效果。</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>上线发布</h3>
-            <p>确认无误后，把这些静态文件部署到 GitHub Pages、Netlify、Vercel 或你自己的服务器。</p>
-          </article>
-        </div>
+        <div class="book-list" aria-live="polite"></div>
       </section>
 
       <section class="section contact" id="contact">
+        <div class="section-label">Contact</div>
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>合作与联系</h2>
-          <p>如需图书翻译、试译、讲座或版权合作，请发送邮件并附上项目简介、字数、期限与样章。</p>
+          <h2>联系</h2>
+          <p>图书翻译、试译、版权与活动合作，可邮件联系。</p>
+          <a class="email" href="mailto:susie_chen@yeah.net">susie_chen@yeah.net</a>
         </div>
-        <a class="button primary" href="mailto:translator@example.com">translator@example.com</a>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> 译者姓名。保留所有权利。</p>
-      <a href="#top">回到顶部 ↑</a>
+      <p>© <span id="year"></span> 陈锐珊</p>
+      <a href="#top">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
