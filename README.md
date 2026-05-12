@@ -26,6 +26,17 @@ assets/chen-ruishan-photo.jpg
 
 页面会优先读取这个 JPG；如果文件不存在，会自动回退到仓库内的 SVG 占位图。
 
-## 部署建议
+## 部署到 GitHub Pages
 
-可部署到 GitHub Pages、Netlify、Vercel 或任意静态网站托管服务。
+仓库已内置 GitHub Actions 工作流：`.github/workflows/pages.yml`。把代码推送到 GitHub 后，可按下面步骤启用自动部署：
+
+1. 打开 GitHub 仓库页面，进入 **Settings → Pages**。
+2. 在 **Build and deployment** 中将 **Source** 选择为 **GitHub Actions**。
+3. 推送到 `main`、`master` 或 `work` 分支，或在 **Actions** 页面手动运行 `Deploy static site to GitHub Pages`。
+4. 部署完成后，GitHub 会在工作流页面显示站点地址，通常形如 `https://用户名.github.io/仓库名/`。
+
+`.nojekyll` 文件用于避免 GitHub Pages 按 Jekyll 方式处理静态资源。
+
+## 其他部署平台
+
+这个项目没有构建步骤，也可以部署到 Netlify、Vercel 或任意静态网站托管服务。部署目录选择仓库根目录，构建命令留空即可。
